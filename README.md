@@ -24,5 +24,5 @@ The tolerance argument defaults to 0.45, which sounds reasonable to Asian person
 When the classification is done, you can select certain photoes' symbol link files to copy to some `folderA`.
 After that you can run `cp -rL folderA folderB` to copy these selected symbol link files' photoes to some `folderB`, then you can use them to publish your album or do whatever you want.
 
-##Thanks
+## Thanks
 Many thanks to [Adam Geitgey](https://github.com/ageitgey) ([@ageitgey](https://twitter.com/ageitgey)) for creating the great face recognition API. If you love machine learning, pay attention to his [blog post](https://medium.com/@ageitgey)
