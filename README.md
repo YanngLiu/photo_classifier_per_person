@@ -19,5 +19,7 @@ Download the code of this project, run it with arguments:
 ```bash
 python3 path_to_classifier.py --cpus -1 path_to_symbollink_folder path_to_single_target_persons_photoes_folder path_to_photoes_to_classify
 ```
+The tolerance argument defaults to 0.45, which sounds reasonable to Asian person, you can use `--tolerance VALUE` to specify one in your command line. In project Face Recognition, default tolerance is 0.6. 
+
 When the classification is done, you can select certain photoes' symbol link files to copy to some `folderA`.
 After that you can run `cp -rL folderA folderB` to copy these selected symbol link files' photoes to some `folderB`, then you can use them to publish your album or do whatever you want.
