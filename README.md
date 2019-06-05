@@ -17,7 +17,7 @@ Classify photos according to the persons who we pay attention, the result is eac
 ## Usage
 Download the code of this project, run it with arguments:
 ```bash
-python3 _path_to_classifier.py_ --cpus -1 _path_to_symbollink_folder_ _path_to_single_target_persons_photoes_folder_ _path_to_photoes_to_classify_
+python3 path_to_classifier.py --cpus -1 path_to_symbollink_folder path_to_single_target_persons_photoes_folder path_to_photoes_to_classify
 ```
-When the classification is done, you can select certain photoes' symbol link files to copy to some folderA.
-After that you can run `cp -rL folderA folderB` to copy these selected symbol link files' photoes to some folderB, then you can use them to publish your album or do whatever you want.
+When the classification is done, you can select certain photoes' symbol link files to copy to some `folderA`.
+After that you can run `cp -rL folderA folderB` to copy these selected symbol link files' photoes to some `folderB`, then you can use them to publish your album or do whatever you want.
