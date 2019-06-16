@@ -55,12 +55,11 @@ def classify_image(photoPath,link_file_folder,personEncodings,personNames,tolera
         # for each person in the photo
         for imgEncoding in imgEncodings:
             distances = face_recognition.face_distance(personEncodings, imgEncoding)
-            minDistance=distances.min()
-            if minDistance > tolerance:
+            minDistanceIdx=np.argmin(distances)
+            if distances[minDistanceIdx] > tolerance:
                 continue
             matched=True
-            personIdx=np.where(distances==minDistance)[0][0]
-            personName=personNames[personIdx]
+            personName=personNames[minDistanceIdx]
             baseFolder=link_file_folder+personName+'/'
             multiFolder=baseFolder+MULTI_FOLDER_NAME+'/'
             if multiplePerson:
